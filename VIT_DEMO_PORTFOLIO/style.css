@@ -8,110 +8,129 @@
  */
 
 
- html{
-    box-sizing:border-box;
+html {
+    box-sizing: border-box;
     font-size: 62.5%;
- }
- html,body{
-    height:100%;
- }
- *,*::before,*::after{
-    box-sizing: inherit;
-    margin: 0;
- }
- .content-wrapper{
-    margin:0 auto;
-    padding: 30px;
-    max-width:900px;
 }
 
-body{
+html,
+body {
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+body {
     background-color: #f6f6f6;
-      font-size: 1.5rem;
+    font-size: 1.5rem;
     line-height: 1.4;
 }
-a{
+
+a {
     color: #3c8453;
 }
-a:hover{
+
+a:hover {
     color: #bcaa96;
 }
-.btn{
+
+.btn {
     background-color: #3c8453;
     color: #f6f6f6;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2 rem;
-      padding: 5px;
+    padding: 5px;
     display: inline-block;
     line-height: 1;
     border-radius: 4px;
     letter-spacing: .1em;
 
 }
-h1,h2,h3{
-    font-family: "Caveat",cursive;
-    font-weight:400;
-    margin:0;
+
+h1,
+h2,
+h3 {
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    margin: 0;
 }
-h1{
+
+h1 {
     font-size: 7 rem;
-line-height: 0.85;
+    line-height: 0.85;
 }
-h2{
+
+h2 {
     font-size: 3.6rem;
 }
-h3{
+
+h3 {
     font-size: 2rem;
 }
 
 /* Index */
-.home{
-    background: url(/DAY_3/VIT_DEMO_PORTFOLIO/placeholder-images/bg-home-office-city.jpg);
+.home {
+    background: url(placeholder-images/bg-home-office-city.jpg);
     background-size: cover;
     /* background: no-repeat; */
     display: flex;
     flex-direction: column;
 }
-.home .content-wrapper{
-    margin:0 auto;
-    max-width:900px;
+
+.home .content-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
     /* background: rgba(255,255,255,0.9); */
     padding: 30px;
     flex: 1 0 auto;
 }
 
-.home .content-bg{
-    padding:30px;
-    background: rgba(255,255,255,0.9);;
+.home .content-bg {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    ;
 }
 
 
 
 /* Resume */
-.resume header::before{
-    background: url(/DAY_3/VIT_DEMO_PORTFOLIO/placeholder-images/bg-home-office-studio.jpg) center/cover;
-    content:"";
-    display:block;
-    height:375px;
+.resume header::before {
+    background: url(placeholder-images/bg-home-office-studio.jpg) center/cover;
+    content: "";
+    display: block;
+    height: 375px;
 }
-.content-wrapper{
-    margin:0 auto;
+
+.content-wrapper {
+    margin: 0 auto;
     max-width: 900px;
 }
 
-.resume-section{
+.resume-section {
     margin-bottom: 50px;
 }
-.resume-section h2{
-    border-bottom:2px dashed  #d3d4d6 ;
+
+.resume-section h2 {
+    border-bottom: 2px dashed #d3d4d6;
 }
 
-.download-link{
+.download-link {
     font-size: 1.5rem;
-    position:fixed;
-    top:5px;
-    left:5px; 
+    position: fixed;
+    top: 5px;
+    left: 5px;
 }
 
 /* profile */
@@ -119,141 +138,153 @@ h3{
 /* projects */
 .project-item {
     margin: 30px 0;
-    display:flow-root;
-    margin-block:30px;
+    display: flow-root;
+    margin-block: 30px;
 }
-.project-item img{
-    float:left;
-    width:300px;
+
+.project-item img {
+    float: left;
+    width: 300px;
     margin-right: 20px;
 }
 
 
 /* Work Experience */
-.work-item{
+.work-item {
     margin-block: 30px;
 }
-.work-details p{
+
+.work-details p {
     margin: 0;
 }
-.work-summary p:first-child{
+
+.work-summary p:first-child {
     margin-top: 0;
 }
 
 
 /* Education */
-.education-item{
+.education-item {
     margin-block: 30px;
 }
-.education-item p{
+
+.education-item p {
     margin: 0;
 }
+
 /* Footer */
-footer{
-    background-color:#222 ;
-    color: #d3d4d6 ;
+footer {
+    background-color: #222;
+    color: #d3d4d6;
     display: flex;
     justify-content: space-between;
     padding-inline: 10px;
 }
-footer a{
-    color: #bcaa96; 
+
+footer a {
+    color: #bcaa96;
 }
 
-footer a:hover{
-    color:#3c8453;
+footer a:hover {
+    color: #3c8453;
 }
 
-.socials{
+.socials {
     list-style-type: none;
-    padding:0;
+    padding: 0;
 }
 
-.socials img{
+.socials img {
     width: 32px;
 }
 
-.socials li{
+.socials li {
     display: inline-block;
     margin-left: 10px;
 }
 
-.socials img:hover{
-    opacity:50%;
+.socials img:hover {
+    opacity: 50%;
 }
+
 @media (max-width:500) {
-    .resume header::before{
+    .resume header::before {
         height: 200px;
     }
-    h1{
+
+    h1 {
         font-size: 5rem;
     }
-    h2{
+
+    h2 {
         font-size: 2.6rem;
     }
 }
 
 @media (min-width:860px) {
-    .work-item{
+    .work-item {
         display: grid;
         grid-template-columns: 300px 1fr;
         column-gap: 20px;
     }
-    .work-summary p:first-child{
+
+    .work-summary p:first-child {
         margin-top: 0;
     }
 }
 
-@media (min-width:860px){
-    .project-item{
-        display:flow-root;
+@media (min-width:860px) {
+    .project-item {
+        display: flow-root;
     }
-    .project-item img{
-    float:left;
-    width:300px;
-    margin-right: 20px;
-}
-        
-}
 
-@media (min-width:650px) and (max-width:859px){
-    .project-wrapper{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        column-gap:20px;
+    .project-item img {
+        float: left;
+        width: 300px;
+        margin-right: 20px;
+    }
 
-    }
-    .project-item img{
-        width:100%;
-    }
 }
 
-@media (max-width:500px){
-    .project-item img{
-        width:100%;
-        margin-bottom:10px;
+@media (min-width:650px) and (max-width:859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+
+    }
+
+    .project-item img {
+        width: 100%;
     }
 }
 
-@media(max-width:1250px){
-    .download-link{
-        position:absolute;
+@media (max-width:500px) {
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 
-@media (min-width:860px){
-    footer{
-        display :flex;
+@media(max-width:1250px) {
+    .download-link {
+        position: absolute;
+    }
+}
+
+@media (min-width:860px) {
+    footer {
+        display: flex;
         justify-content: space-between;
         padding: 0 20px;
     }
 }
 
-@media(max-width:859px){
-    footer{
-        text-align:center;
-        padding:10px;
+@media(max-width:859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
     }
-        
- 
+
+
 }
