@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
@@ -16,72 +18,68 @@
   <a class="btn download-link" href="UPDATED_RESUME.docx">Download Resume</a>
   <!-- //  INTRO  // -->
 
-  <header>
-    <div class="content-wrapper">
-      <!-- Start content edits below this line. -->
-      <h1>Machum Roy Choudhury</h1>
-      <h2>Btech CSE (Core) VIT Vellore</h2>
+  <header class="resume-header">
+  <div class="content-wrapper">
+    <h1> Machum Roy Choudhury</h1>
+    <h2>B.Tech in Computer Science Engineering (Core) – VIT Vellore</h2>
+    <h3 class="tagline">Aspiring Software Developer | Automation Enthusiast | Tech Explorer</h3>
+  </div>
+</header>
 
-      <!-- End content edits here. -->
-    </div>
-  </header>
 
   <main class="content-wrapper">
     <!-- //  PROFILE  // -->
     <section class="resume-section">
-      <!-- Start content edits below this line. -->
-      <h2>Profile</h2>
-      <p>Second-year B.Tech Computer Science Engineering student at VIT Vellore with a strong foundation in programming,
-        automation, and collaborative project development. Achieved AIR 413 in VITEEE, demonstrating academic excellence
-        and competitive aptitude. Seeking opportunities to apply technical and leadership skills in software development
-        and automation domains.</p>
-      <a href="index.html">Back to homepage</a>
+  <h2>Profile</h2>
+  <div class="profile-card">
+  <div class="profile-image">
+    <img src="placeholder-images/MRRC.png" alt="MRRC">
+  </div>
 
-      <!-- End content edits here. -->
-    </section>
+  <div class="profile-content">
+    <p class="profile-text">
+ I'm a <strong>second-year B.Tech Computer Science student at VIT Vellore</strong>, passionate about software development, automation, and emerging technologies. I bring a strong foundation in programming and collaborative teamwork to every project I work on.    </p>
+    <p class="profile-text">
+Ranked <strong>#413 All India</strong> in VITEEE 2023, I aim to apply my technical and leadership skills to real-world applications that drive innovation and efficiency. I enjoy solving problems, building smart systems, and contributing to team success.    </p>
+    <p class="profile-text">
+Currently seeking internship or project-based opportunities in software development, web technologies, and embedded systems.    </p>
+
+    <a class="back-link" href="index.html"><i class="fa fa-arrow-left"></i> Back to homepage</a>
+  </div>
+</div>
+
+</section>
+
 
     <!-- //  PROJECTS  // -->
-    <section class="resume-section">
-      <!-- Start content edits below this line. -->
-      <h2>Projects</h2>
-      <p> View selected project below. More information can be found at my
-        <a href="https://github.com/MRC005">GitHub profile</a>
-      </p>
+   <section class="resume-section">
+  <h2>Projects</h2>
+  <p>
+    View selected project below. More information can be found at my
+    <a href="https://github.com/MRC005" target="_blank" rel="noopener">GitHub profile</a>.
+  </p>
 
-      <!-- To add more items, copy this whole <section></section> block-->
-      <div class="project-wrapper">
-        <section class="project-item">
-          <img src="placeholder-images/logo.png"
-            srcset="placeholder-images/logo.png 2x" alt="Project logo">
-          <h3>DomoticsHub – The Heart of Home Automation</h3>
-          <p>
+  <div class="project-wrapper">
+    <section class="project-item">
+      <img src="placeholder-images/logo.png" srcset="placeholder-images/logo.png 2x" alt="Project logo" >
+      <div class="project-content">
+        <h2>DomoticsHub – The Heart of Home Automation</h2>
+        <p><strong>Team:</strong> DomoticDynamos (Jaison, Machum, Jathin)</p>
+        <ul>
+          <li>Developed a centralized home automation platform to unify control of smart devices, enhancing comfort, security, and energy efficiency.</li>
+          <li>Designed and implemented a user-friendly interface for seamless management of lighting, heating, security, and appliances via smartphones and computers.</li>
+          <li>Integrated features such as remote access, energy monitoring, and AI-powered voice assistant for comprehensive smart home control.</li>
+          <li>Ensured scalability, robust privacy protection, and user customization through modular architecture and secure data handling.</li>
+          <li><strong>Technologies used:</strong> HTML, CSS, JavaScript, React JS, Python, IoT protocols, Git, collaborative development.</li>
+        </ul>
 
-            Team: DomoticDynamos (Jaison, Machum, Jathin)
-            <br>
-            Developed a centralized home automation platform to unify control of smart devices, enhancing comfort,
-            security, and energy efficiency.
-            <br>
-            Designed and implemented a user-friendly interface for seamless management of lighting, heating, security,
-            and appliances via smartphones and computers.
-            <br>
-            Integrated features such as remote access, energy monitoring, and AI-powered voice assistant for
-            comprehensive smart home control.
-            <br>
-            Ensured scalability, robust privacy protection, and user customization through modular architecture and
-            secure data handling.
-            <br>
-            Technologies used: HTML, CSS, JavaScript, React JS,Python, IoT protocols, Git, collaborative development.
-            <br>
-
-            <a class="btn" href=" https://github.com/MRC005/DOMOTICSHUB-HOME_AUTOMATION" target="_blank">Website</a>
-            <br>
-            <!-- additional links, e.g. newsletter -->
-            <a class="btn"
-              href="https://github.com/MRC005/DOMOTICSHUB-HOME_AUTOMATION/blob/main/DomoticsHub-PPT%20(1).pdf"
-              target="_blank">Project Documentation</a>
-        </section>
+        <a class="btn" href=" https://mrc005.github.io/DOMOTICSHUB-HOME_AUTOMATION/" target="_blank" rel="noopener">Website</a>
+        <a class="btn" href="https://github.com/MRC005/DOMOTICSHUB-HOME_AUTOMATION/blob/main/DomoticsHub-PPT%20(1).pdf" target="_blank" rel="noopener">Project Documentation</a>
       </div>
     </section>
+  </div>
+</section>
+
 
     <!-- End content edits here. -->
 
@@ -109,7 +107,7 @@
       <!-- Start content edits below this line. -->
       <h2>Technical Skills</h2>
 
-      <ul>
+      <ul class="skills-list">
         <li>Python</li>
         <li>Java</li>
         <li>C</li>
@@ -129,54 +127,56 @@
     </section>
 
     <!-- //  AWARDS & ACHIEVEMENTS  // -->
-    <section class="resume-section">
-      <h2>Awards & Achievements</h2>
-      <ul>
-        <li>
-          <strong>VIT Engineering Entrance Examination (VITEEE)</strong><br>
-          Vellore Institute of Technology · 2023<br>
-          📊 Achieved <strong>All India Rank 413</strong>
-        </li>
-        <li>
-          <strong>Ajmal National Talent Search Examination (ANTSE)</strong><br>
-          Ajmal Foundation, Assam · May 2016<br>
-          🏅 Secured <strong>State Rank 6</strong>
-        </li>
-        <li>
-          <strong>Sofura Talent Discovery Examination</strong><br>
-          মাহেকীয়া শিশু আলোচনী "সফুৰা" · September 2014<br>
-          🏅 Achieved <strong>State Rank 20</strong>
-        </li>
-        <li>
-          <strong>NERITS State Level Talent Search Examination</strong><br>
-          North East Regional Institute for Talent Search, Assam Govt. Permitted · October 2013<br>
-          🏅 Earned <strong>All Assam Rank 34</strong>
-        </li>
-        <li>
-          <strong>Fine Arts – Nikhil Bharat Sangeet Samiti (Kolkata)</strong><br>
-          Indian International Rural Cultural Centre, New Delhi · June 2013<br>
-          🖼️ Awarded <strong>1st Division in Fine Arts</strong>
-        </li>
-        <li>
-          <strong>Painting – Nikhil Bharat Sangeet Samiti (Kolkata)</strong><br>
-          IIRC Centre, New Delhi · July 2012<br>
-          🎨 Received <strong>1st Division in Painting</strong>
-        </li>
-        <li>
-          <strong>Fine Arts – Nikhil Bharat Sangeet Samiti (Kolkata)</strong><br>
-          IIRC Centre, New Delhi · September 2011<br>
-          🎨 Secured <strong>1st Division in Fine Arts</strong>
-        </li>
-      </ul>
-    </section>
+   <section class="resume-section">
+  <h2>Awards & Achievements</h2>
+  <ul class="awards-list">
+    <li>
+      <div class="award-title">📊 <strong>VIT Engineering Entrance Examination (VITEEE)</strong></div>
+      <div class="award-details">Vellore Institute of Technology · 2023</div>
+      <div class="award-result">All India Rank <strong>#413</strong></div>
+    </li>
+    <li>
+      <div class="award-title">🏅 <strong>Ajmal National Talent Search Examination (ANTSE)</strong></div>
+      <div class="award-details">Ajmal Foundation, Assam · May 2016</div>
+      <div class="award-result">State Rank <strong>#6</strong></div>
+    </li>
+    <li>
+      <div class="award-title">🏅 <strong>Sofura Talent Discovery Examination</strong></div>
+      <div class="award-details">মাহেকীয়া শিশু আলোচনী "সফুৰা" · September 2014</div>
+      <div class="award-result">State Rank <strong>#20</strong></div>
+    </li>
+    <li>
+      <div class="award-title">🏅 <strong>NERITS State Level Talent Search Examination</strong></div>
+      <div class="award-details">North East Regional Institute for Talent Search, Assam Govt. Permitted · October 2013</div>
+      <div class="award-result">All Assam Rank <strong>#34</strong></div>
+    </li>
+    <li>
+      <div class="award-title">🖼️ <strong>Fine Arts – Nikhil Bharat Sangeet Samiti (Kolkata)</strong></div>
+      <div class="award-details">Indian International Rural Cultural Centre, New Delhi · June 2013</div>
+      <div class="award-result">1st Division in Fine Arts</div>
+    </li>
+    <li>
+      <div class="award-title">🎨 <strong>Painting – Nikhil Bharat Sangeet Samiti (Kolkata)</strong></div>
+      <div class="award-details">IIRC Centre, New Delhi · July 2012</div>
+      <div class="award-result">1st Division in Painting</div>
+    </li>
+    <li>
+      <div class="award-title">🎨 <strong>Fine Arts – Nikhil Bharat Sangeet Samiti (Kolkata)</strong></div>
+      <div class="award-details">IIRC Centre, New Delhi · September 2011</div>
+      <div class="award-result">1st Division in Fine Arts</div>
+    </li>
+  </ul>
+</section>
+
   </main>
 
   <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
   <footer>
     <!-- Start content edits below this line. -->
-    <p>© 2023 by Machum Roy Choudhury | <a
-        href="mailto:machumroy.choudhury2023@vitstudent.ac.in">machumroy.choudhury2023@vitstudent.ac.in</a></p>
-
+    <p>© 2025 Machum Roy Choudhury | <a class="email-link" href="mailto:machumroy.choudhury2023@vitstudent.ac.in">
+    <i class="fa-solid fa-envelope-open-text email-icon"></i>
+    machumroy.choudhury2023@vitstudent.ac.in
+  </a>
     <!-- Add or remove any networks. -->
     <ul class="socials">
       <!-- <li>
