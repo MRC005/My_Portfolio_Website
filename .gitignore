@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+._*
+
+# editors
+.vscode/
+.idea/
+
+# Claude Code worktrees
+.claude/worktrees/

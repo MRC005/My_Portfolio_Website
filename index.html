@@ -1,97 +1,542 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Machum Roy Choudhury Portfolio</title>
-  <link rel="icon" type="image/png" href="placeholder-images/cv.png">
-  <link rel="shortcut icon" href="placeholder-images/cv.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+
+  <title>Machum Roy Choudhury — Computer Science Engineering Student</title>
+  <meta name="description"
+    content="I'm a final-year Computer Science Engineering student at VIT Vellore. I build full-stack web apps, computer-vision tools and embedded systems — TreadCheck, MinuteMeals and more.">
+  <link rel="canonical" href="https://mrc005.github.io/My_Portfolio_Website/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Machum Roy Choudhury — Computer Science Engineering Student">
+  <meta property="og:description"
+    content="Final-year CSE student at VIT Vellore. I build full-stack web apps, computer-vision tools and embedded systems.">
+  <meta property="og:url" content="https://mrc005.github.io/My_Portfolio_Website/">
+  <meta property="og:image" content="https://mrc005.github.io/My_Portfolio_Website/assets/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/favicon.png" type="image/png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Caveat:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.remove("no-js");</script>
 </head>
 
-<body class="home">
-  <!-- //  INTRO  // -->
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="shell nav__inner">
+      <a class="nav__me" href="#top">
+        <span class="nav__sig">Machum</span>
+        <span class="nav__sig-sub">Roy Choudhury</span>
+      </a>
 
-  <div class="content-wrapper">
-    <div class="content-bg">
-      <header>
-        <!-- Start content edits below this line. -->
-        <h1>Machum Roy Choudhury</h1>
-        <h2>B.Tech CSE (Core) VIT Vellore</h2>
+      <nav class="nav__links" id="nav-links" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="nav__resume" href="Machum_Roy_Choudhury_Resume_General.pdf" target="_blank" rel="noopener">Résumé</a>
+      </nav>
 
-        <!-- End content edits here. -->
-      </header>
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+        aria-label="Open menu">
+        <span class="nav__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
 
-      <!-- //  ABOUT ME  // -->
+  <main id="main">
 
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="shell">
+        <p class="hero__eyebrow">Vellore, India</p>
 
-      <main>
-        <!-- Start content edits below this line. -->
-        <p id="profile-summary">Pre-Final Year B.Tech Computer Science Engineering student at VIT Vellore with a strong
-          foundation in programming,
-          automation, and collaborative project development. Achieved AIR 413 in VITEEE, demonstrating academic
-          excellence
-          and competitive aptitude. Seeking opportunities to apply technical and leadership skills in software
-          development
-          and automation domains.</p>
-        <p>To learn more about my work history, check out my <a href="resume.html"> resume</a>. Thanks for stopping by!
+        <h1 class="hero__name">Machum Roy&nbsp;Choudhury</h1>
+
+        <p class="hero__role">Computer Science Engineering Student</p>
+
+        <p class="hero__lede">
+          I'm in my final year of B.Tech CSE at <strong>VIT Vellore</strong>. I like turning ideas into
+          software that actually runs, and that's taken me through full-stack web development, machine learning
+          and computer vision, backend services, and getting things deployed where people can use them.
+        </p>
+        <p class="hero__lede hero__lede--second">
+          I like the part where an idea stops being a plan and starts actually running.
         </p>
 
-        <!-- End content edits here. -->
-      </main>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#projects">View projects</a>
+          <a class="btn btn--ghost" href="Machum_Roy_Choudhury_Resume_General.pdf" target="_blank" rel="noopener">
+            Download résumé
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19h16" />
+            </svg>
+          </a>
+        </div>
+
+        <ul class="hero__links">
+          <li>
+            <a href="https://github.com/MRC005" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="ico ico--fill">
+                <path
+                  d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z" />
+              </svg>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/machum-roy-choudhury-463999270" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="ico ico--fill">
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.4 21.5h5.16V9.2H2.4v12.3ZM9.9 9.2h4.95v1.68h.07c.69-1.2 2.37-2.06 4.12-2.06 3.5 0 4.46 2.15 4.46 5.4v7.28h-5.15v-6.46c0-1.54-.3-3.02-2.12-3.02-1.78 0-2.18 1.31-2.18 2.94v6.54H9.9V9.2Z" />
+              </svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="mailto:machumroy.choudhury2023@vitstudent.ac.in">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="ico">
+                <path d="M3 6h18v12H3z" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+              Email
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="shell section__grid">
+        <div class="section__head">
+          <h2 class="label"><span aria-hidden="true">01 — </span>About</h2>
+        </div>
+
+        <div class="section__body prose reveal">
+          <p>
+            I study Computer Science Engineering (Core) at VIT Vellore, graduating in 2027. I got into this
+            because I wanted to know how the software I used every day actually worked, and the fastest way I
+            found to learn that was to build a version of it myself and watch where it broke.
+          </p>
+          <p>
+            That's roughly how I've ended up moving across areas. MinuteMeals taught me what a real backend has
+            to handle once more than one person is using it. TreadCheck started as a computer-vision idea and
+            turned into a lesson about how much of machine learning is actually about the quality of your input
+            data. The Arduino cooling controller was where I learned that control loops behave nothing like the
+            textbook diagram until you tune them yourself.
+          </p>
+          <p>
+            In 2026 I interned at <strong>AMTRON</strong>, a Government of Assam IT undertaking, where I worked
+            on e-governance applications that real departments depend on &mdash; my first look at software with
+            institutional weight behind it.
+          </p>
+          <p>
+            Right now I'm looking for a software engineering role where I can keep building systems that people
+            actually use. I'm also carrying TreadCheck forward as research work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--projects" id="projects">
+      <div class="shell">
+        <div class="section__grid">
+          <div class="section__head">
+            <h2 class="label"><span aria-hidden="true">02 — </span>Selected projects</h2>
+          </div>
+          <div class="section__body">
+            <p class="section__note">
+              Six things I've built. The first two are the ones I'd want to talk through in an interview.
+            </p>
+          </div>
+        </div>
+
+        <!-- ---------- FEATURED: TreadCheck ---------- -->
+        <article class="feature feature--banner reveal">
+          <div class="feature__media feature__media--framed">
+            <!-- Genuine output from the TreadCheck preprocessing pipeline (MRC005/tyre-tread-analysis).
+                 To swap in a screenshot of the result screen, replace the <img> src below. -->
+            <img src="assets/treadcheck-pipeline.jpg" width="1400" height="224" loading="lazy" decoding="async"
+              alt="Four stages of the TreadCheck image pipeline applied to a tyre photograph: original, greyscale, CLAHE contrast equalisation, and the blurred output.">
+            <p class="feature__caption">Preprocessing stages from the TreadCheck pipeline.</p>
+          </div>
+
+          <div class="feature__body">
+            <p class="feature__kicker">Featured &middot; my own project</p>
+            <h3 class="feature__title">TreadCheck</h3>
+            <p class="feature__sub">Tyre condition screening from a phone photo</p>
+
+            <p>
+              A smartphone-based tyre-condition screening system built with computer vision and machine
+              learning. You photograph a tyre and it tells you whether the surface shows signs of wear,
+              cracking or perished rubber. My own idea, and I built all of it &mdash; the pipeline, the model,
+              the web app and the deployment.
+            </p>
+            <p>
+              I started from a classical computer-vision approach, then found that one of the original features
+              was reacting strongly to image resolution rather than to the tyre itself. That sent me back to
+              rethink the pipeline and simplify the production model. It now checks the photo before trusting
+              it, and says when it isn't confident instead of guessing.
+            </p>
+            <p class="feature__note">
+              It screens surface condition from a photograph. It doesn't measure tread depth in millimetres,
+              certify roadworthiness, or replace an actual tyre professional.
+            </p>
+            <p class="feature__research">
+              Research work currently being prepared for submission to journals.
+            </p>
+
+            <ul class="tags">
+              <li>Python</li>
+              <li>OpenCV</li>
+              <li>scikit-learn</li>
+              <li>SVM</li>
+              <li>GLCM / LBP</li>
+              <li>Vercel</li>
+            </ul>
+
+            <div class="links">
+              <a class="btn btn--solid btn--sm" href="https://tyre-tread-analysis-one.vercel.app" target="_blank"
+                rel="noopener">Live demo</a>
+              <a class="btn btn--ghost btn--sm" href="https://github.com/MRC005/tyre-tread-analysis" target="_blank"
+                rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------- FEATURED: MinuteMeals ---------- -->
+        <article class="feature feature--flip reveal">
+          <div class="feature__media feature__media--mark">
+            <img src="assets/minutemeals-mark.png" width="288" height="320" loading="lazy" decoding="async"
+              alt="MinuteMeals logo">
+          </div>
+
+          <div class="feature__body">
+            <p class="feature__kicker">Featured</p>
+            <h3 class="feature__title">MinuteMeals</h3>
+            <p class="feature__sub">Full-stack food delivery platform</p>
+
+            <p>
+              A MERN food-ordering app I built solo, from the database schema up to the deployed site: menu
+              browsing, cart, orders, live order status, and an admin side for managing menus and watching
+              orders move through their lifecycle.
+            </p>
+            <p>
+              This was the project where I stopped thinking in pages and started thinking in state &mdash; what
+              happens when two people order the last item, what the client should show while the server is
+              still deciding.
+            </p>
+
+            <ul class="tags">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>REST APIs</li>
+            </ul>
+
+            <div class="links">
+              <a class="btn btn--solid btn--sm" href="https://minutemeals-client.onrender.com/" target="_blank"
+                rel="noopener">Live demo</a>
+              <a class="btn btn--ghost btn--sm" href="https://github.com/MRC005/MinuteMeals" target="_blank"
+                rel="noopener">GitHub</a>
+              <a class="link-quiet" href="https://minutemeals-dashboard.onrender.com/" target="_blank"
+                rel="noopener">admin dashboard &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------- COMPACT GRID ---------- -->
+        <div class="cards">
+
+          <article class="card card--mark reveal">
+            <img class="card__mark" src="assets/domoticshub-glyph.png" width="114" height="131" loading="lazy"
+              decoding="async" alt="DomoticsHub logo">
+            <h3 class="card__title">DomoticsHub</h3>
+            <p class="card__text">
+              A home-automation dashboard bringing lighting, climate, security and appliances under one
+              interface, with remote access and energy monitoring. Built with two teammates as DomoticDynamos.
+            </p>
+            <ul class="tags">
+              <li>React</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>IoT</li>
+            </ul>
+            <div class="links">
+              <a class="link-arrow" href="https://mrc005.github.io/DOMOTICSHUB-HOME_AUTOMATION/index.html"
+                target="_blank" rel="noopener">Live demo</a>
+              <a class="link-arrow" href="https://github.com/MRC005/DOMOTICSHUB-HOME_AUTOMATION" target="_blank"
+                rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card__title">Autonomous Cloud Cost Governor</h3>
+            <p class="card__text">
+              A simulated multi-VM datacenter in Java where an agent watches CPU, RAM and bandwidth telemetry
+              and predicts which workloads are about to become expensive &mdash; catching cost problems before
+              the bill instead of after it.
+            </p>
+            <ul class="tags">
+              <li>Java 17</li>
+              <li>CloudSim Plus</li>
+              <li>Maven</li>
+              <li>Pandas</li>
+            </ul>
+            <div class="links">
+              <a class="link-arrow" href="https://github.com/MRC005/cloudsim-autonomous-cost-governor"
+                target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card__title">Real-Time Precision Cooling System</h3>
+            <p class="card__text">
+              An Arduino temperature controller with four modes, including a tuned PID loop with anti-windup
+              clamping and an AUTO mode that switches strategy based on how far off target it is. Rotary-encoder
+              UI on a 16&times;2 LCD.
+            </p>
+            <ul class="tags">
+              <li>Embedded C++</li>
+              <li>PID control</li>
+              <li>DS18B20</li>
+              <li>I2C</li>
+            </ul>
+            <div class="links">
+              <a class="link-arrow"
+                href="https://github.com/MRC005/Real-Time-Precision-Cooling-System-An-Arduino-Based-Multi-Mode-Fan-Controller-with-PID-Integration"
+                target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card__title">Cross-Lingual Semantic Role Labeling</h3>
+            <p class="card__text">
+              Labelling who-did-what-to-whom in a sentence, in languages the model was never trained on, using
+              zero-shot transfer. An experiment in how far you can get with no target-language training data.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>NLP</li>
+              <li>Transfer learning</li>
+            </ul>
+            <div class="links">
+              <a class="link-arrow"
+                href="https://github.com/MRC005/Cross-Lingual-Semantic-Role-Labeling-via-Zero-Shot-Transfer"
+                target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="section__more">
+          More on <a href="https://github.com/MRC005" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="shell section__grid">
+        <div class="section__head">
+          <h2 class="label"><span aria-hidden="true">03 — </span>Experience</h2>
+        </div>
+
+        <div class="section__body">
+          <article class="job reveal">
+            <p class="job__when">2026</p>
+            <h3 class="job__role">Software Development Intern</h3>
+            <p class="job__org">
+              AMTRON &mdash; Assam Electronics Development Corporation Ltd.
+              <span class="job__where">Guwahati, Assam</span>
+            </p>
+            <p class="job__context">
+              A Government of Assam undertaking under the Department of Information Technology, and the state's
+              nodal agency for ICT and e-governance in North East India.
+            </p>
+            <ul class="job__points">
+              <li>Worked on live e-governance applications used by multiple Government of Assam departments,
+                inside an established engineering team.</li>
+              <li>Took features through the full cycle &mdash; requirements, implementation, testing, debugging,
+                delivery &mdash; and reported progress to project stakeholders.</li>
+              <li>Saw how government-grade systems are actually architected and shipped, which is a very
+                different set of constraints from a personal project.</li>
+            </ul>
+          </article>
+
+          <article class="job reveal">
+            <p class="job__when">2023 &ndash; 2027</p>
+            <h3 class="job__role">B.Tech, Computer Science &amp; Engineering (Core)</h3>
+            <p class="job__org">
+              Vellore Institute of Technology
+              <span class="job__where">Vellore, Tamil Nadu</span>
+            </p>
+            <p class="job__context">
+              Earlier: Noonmati Public School, Guwahati (Class XII, 2023) and Manas Valley Academy, Barpeta Road
+              (Class X, 2021).
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="shell section__grid">
+        <div class="section__head">
+          <h2 class="label"><span aria-hidden="true">04 — </span>Skills</h2>
+        </div>
+
+        <div class="section__body skills reveal">
+          <div class="skill">
+            <h3>Languages</h3>
+            <p>Java · Python · C++ · C · JavaScript · SQL</p>
+          </div>
+          <div class="skill">
+            <h3>Frontend</h3>
+            <p>React · HTML5 · CSS3 · responsive UI</p>
+          </div>
+          <div class="skill">
+            <h3>Backend</h3>
+            <p>Node.js · Express · REST APIs · JSON</p>
+          </div>
+          <div class="skill">
+            <h3>Databases</h3>
+            <p>MongoDB · SQL</p>
+          </div>
+          <div class="skill">
+            <h3>Machine learning &amp; computer vision</h3>
+            <p>OpenCV · scikit-learn · NumPy · Pandas · Matplotlib · feature engineering · SVM · NLP</p>
+          </div>
+          <div class="skill">
+            <h3>Cloud &amp; deployment</h3>
+            <p>Vercel · Render · GitHub Pages · CloudSim Plus · data pipelines · telemetry processing</p>
+          </div>
+          <div class="skill">
+            <h3>Embedded</h3>
+            <p>Arduino · Embedded C++ · PID control · I2C · DS18B20</p>
+          </div>
+          <div class="skill">
+            <h3>Tools &amp; foundations</h3>
+            <p>Git · GitHub · Maven · Postman · VS Code · Linux · MATLAB · data structures &amp; algorithms ·
+              OOP · DBMS · operating systems · networks</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements">
+      <div class="shell section__grid">
+        <div class="section__head">
+          <h2 class="label"><span aria-hidden="true">05 — </span>Achievements &amp; certifications</h2>
+        </div>
+
+        <div class="section__body reveal">
+          <ul class="facts">
+            <li>
+              <span class="facts__k">VITEEE 2023</span>
+              <span class="facts__v">All India Rank 413</span>
+            </li>
+            <li>
+              <span class="facts__k">TECDIA India</span>
+              <span class="facts__v">Shortlisted for interview via a coding challenge</span>
+            </li>
+            <li>
+              <span class="facts__k">Student chapters</span>
+              <span class="facts__v">Core member — Dream Merchants (finance &amp; partnerships), AdMark
+                (creative &amp; publicity), Enajori Assamese Literary Association (events)</span>
+            </li>
+            <li>
+              <span class="facts__k">Certifications</span>
+              <span class="facts__v">MERN Stack Web Development (FacePrep, 2025) · AutoML Bootcamp (Udemy, 2023)
+                · Cyber Security Workshop (VIT graVITas, 2023)</span>
+            </li>
+            <li>
+              <span class="facts__k">Languages</span>
+              <span class="facts__v">Assamese (native) · English &amp; Hindi (professional) · Bengali (limited
+                working) · Japanese (elementary)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--contact" id="contact">
+      <div class="shell section__grid">
+        <div class="section__head">
+          <h2 class="label"><span aria-hidden="true">06 — </span>Contact</h2>
+        </div>
+
+        <div class="section__body reveal">
+          <p class="contact__h">Happy to talk.</p>
+          <p class="contact__p">
+            If you're hiring, or you just want to ask about one of these projects, email is the surest way to
+            reach me.
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <a href="mailto:machumroy.choudhury2023@vitstudent.ac.in">
+                <span class="contact__label">Email</span>
+                <span class="contact__value">machumroy.choudhury2023@vitstudent.ac.in</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/machum-roy-choudhury-463999270" target="_blank" rel="noopener">
+                <span class="contact__label">LinkedIn</span>
+                <span class="contact__value">machum-roy-choudhury</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/MRC005" target="_blank" rel="noopener">
+                <span class="contact__label">GitHub</span>
+                <span class="contact__value">MRC005</span>
+              </a>
+            </li>
+            <li>
+              <a href="Machum_Roy_Choudhury_Resume_General.pdf" target="_blank" rel="noopener">
+                <span class="contact__label">Résumé</span>
+                <span class="contact__value">Download PDF</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <div class="shell foot__inner">
+      <p class="foot__sig">Machum Roy Choudhury</p>
+      <p class="foot__meta">
+        Built by hand &mdash; HTML, CSS and a little JavaScript. <span>&copy; 2026</span>
+      </p>
     </div>
-
-  </div>
-
-
-
-
-  <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-  <footer>
-    <!-- Start content edits below this line. -->
-    <p>© 2023 by Machum Roy Choudhury |  <a class="email-link" href="mailto:machumroy.choudhury2023@vitstudent.ac.in">
-    <i class="fa-solid fa-envelope-open-text email-icon"></i>
-    machumroy.choudhury2023@vitstudent.ac.in
-  </a>
-    <!-- Add or remove any networks. -->
-    <ul class="socials">
-      <!-- <li>
-          <a href="#" target="_blank">Twitter</a>
-        </li> -->
-      <li>
-
-        <a href="https://linkedin.com/in/machum-roy-choudhury-463999270" target="_blank">
-          <img src="placeholder-images/icon-logo-linkedin.png" alt="Connect on LinkedIn" srcset="placeholder-images/icon-logo-linkedin.png 2x,
-               placeholder-images/icon-logo-linkedin.png 3x">
-        </a>
-
-      </li>
-      <li>
-        <a href="https://github.com/MRC005" target="_blank"><img
-            src="placeholder-images/github.png" alt=" Visit my Github Profile"
-            srcset="placeholder-images/github.png 2x,placeholder-images/github.png 3x"></a>
-      </li>
-      <!-- <li>
-          <a href="#" target="_blank">Facebook</a>
-        </li> -->
-   <li>
-  <a href="https://www.youtube.com/@mrc4182" target="_blank">
-    <img src="placeholder-images/icon-logo-youtube.png" alt="Check my Youtube channel">
-  </a>
-</li>
-
-      <!-- <li>
-          <a href="#" target="_blank">Instagram</a>
-        </li> -->
-    </ul>
-    <!-- End content edits here. -->
   </footer>
+
+  <script src="main.js" defer></script>
 </body>
 
 </html>
