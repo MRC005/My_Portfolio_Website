@@ -393,27 +393,6 @@ h3 {
     padding: 10px;
 }
 
-/* TreadCheck's pipeline strip is very wide, so it sits across the top instead */
-.project-item--wide {
-    flex-direction: column;
-}
-
-.project-item--wide img {
-    width: 100%;
-    padding: 8px;
-}
-
-.project-figure {
-    width: 100%;
-}
-
-.project-caption {
-    font-size: 1.15rem;
-    color: #5d6159;
-    margin-top: 8px;
-    font-style: italic;
-}
-
 /* projects with no genuine image of their own — text only, no stock filler */
 .project-item--text .project-content {
     min-width: 0;
@@ -462,13 +441,6 @@ h3 {
     border-left: 3px solid var(--beige);
     padding-left: 14px;
     margin-bottom: 12px;
-}
-
-.project-research {
-    font-size: 1.3rem;
-    color: var(--green-text);
-    font-weight: 600;
-    margin-bottom: 14px;
 }
 
 .project-links {
