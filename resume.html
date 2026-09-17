@@ -4,40 +4,485 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Machum Roy Choudhury — Résumé</title>
-  <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://mrc005.github.io/My_Portfolio_Website/">
-  <meta http-equiv="refresh" content="0; url=index.html#about">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: #faf9f7;
-      color: #1b1d1b;
-      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      text-align: center;
-      padding: 24px;
-    }
-
-    a {
-      color: #2f6b43;
-    }
-  </style>
+  <title>Machum Roy Choudhury Resume</title>
+  <meta name="description"
+    content="Resume of Machum Roy Choudhury - final-year Computer Science Engineering student at VIT Vellore. TreadCheck, MinuteMeals, DomoticsHub and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Machum Roy Choudhury Resume">
+  <meta property="og:description"
+    content="Projects, internship experience and skills of Machum Roy Choudhury, final-year CSE student at VIT Vellore.">
+  <link rel="icon" type="image/png" href="placeholder-images/cv.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <!-- This page used to hold the résumé. It now lives on the main page; this stub
-       keeps older links working. -->
-  <div>
-    <p>This page has moved.</p>
-    <p>
-      <a href="index.html#about">Go to the portfolio</a> &middot;
-      <a href="Machum_Roy_Choudhury_Resume_General.pdf">Download the résumé (PDF)</a>
+<body class="resume">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="btn download-link" href="Machum_Roy_Choudhury_Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+  <!-- //  INTRO  // -->
+
+  <header class="resume-header">
+    <div class="content-wrapper">
+      <h1> Machum Roy Choudhury</h1>
+      <h2>B.Tech in Computer Science Engineering (Core) &ndash; VIT Vellore</h2>
+      <h3 class="tagline">Software Development | Computer Vision &amp; Machine Learning | Cloud &amp; Embedded Systems
+      </h3>
+    </div>
+  </header>
+
+
+  <main class="content-wrapper" id="main">
+    <!-- //  PROFILE  // -->
+    <section class="resume-section">
+      <h2>Profile</h2>
+      <div class="profile-card">
+        <div class="profile-image">
+          <img src="placeholder-images/MRRC.jpg" width="440" height="440" alt="Machum Roy Choudhury">
+        </div>
+
+        <div class="profile-content">
+          <p class="profile-text">
+            I'm a <strong>final-year B.Tech Computer Science Engineering student at VIT Vellore</strong>. I enjoy
+            turning ideas into working software, and most of what I've learned has come from building projects
+            end to end and seeing where they break.
+          </p>
+          <p class="profile-text">
+            I've worked across <strong>full-stack web development, computer vision and machine learning, backend
+              and cloud systems, and embedded electronics</strong>. In 2026 I interned at <strong>AMTRON</strong>,
+            a Government of Assam IT undertaking, on live e-governance applications.
+          </p>
+          <p class="profile-text">
+            Ranked <strong>#413 All India</strong> in VITEEE 2023. Currently looking for a software engineering
+            role where I can keep building systems that people actually use.
+          </p>
+
+          <a class="back-link" href="index.html"><i class="fa fa-arrow-left"></i> Back to homepage</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- //  EXPERIENCE  // -->
+    <section class="resume-section">
+      <h2>Experience</h2>
+
+      <div class="work-item">
+        <h3>Software Development Intern &mdash; AMTRON</h3>
+        <p class="work-meta">
+          Assam Electronics Development Corporation Ltd. &middot; Guwahati, Assam &middot; 2026<br>
+          A Government of Assam undertaking under the Department of Information Technology, and the state's nodal
+          agency for ICT and e-governance in North East India.
+        </p>
+        <ul>
+          <li>Worked on live e-governance applications used by several Government of Assam departments, as part of
+            an established engineering team.</li>
+          <li>Took work through the full cycle &mdash; requirements, implementation, testing, debugging and
+            delivery &mdash; and reported progress to project stakeholders.</li>
+          <li>Saw how large, government-grade systems are actually built and shipped, which is a very different set
+            of constraints from a personal project.</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- //  PROJECTS  // -->
+    <section class="resume-section">
+      <h2>Projects</h2>
+      <p class="section-intro">
+        A few things I've built. More on my
+        <a href="https://github.com/MRC005" target="_blank" rel="noopener">GitHub profile</a>.
+      </p>
+
+      <div class="project-wrapper">
+
+        <section class="project-item project-item--wide">
+          <figure class="project-figure">
+            <img src="assets/treadcheck-pipeline.jpg" width="1400" height="224" loading="lazy" decoding="async"
+              alt="Four stages of the TreadCheck image pipeline on a tyre photograph: original, greyscale, CLAHE contrast equalisation and the blurred output.">
+            <figcaption class="project-caption">Preprocessing stages from the TreadCheck pipeline.</figcaption>
+          </figure>
+          <div class="project-content">
+            <h3>TreadCheck</h3>
+            <p class="project-role">My own project &middot; live web application</p>
+            <p>
+              A smartphone-based tyre-condition screening system using computer vision and machine learning. You
+              photograph a tyre and it tells you whether the surface shows signs of wear, cracking or perished
+              rubber.
+            </p>
+            <ul>
+              <li>Started from a classical computer-vision approach and built the full pipeline, model, web app and
+                deployment myself.</li>
+              <li>While testing it, I found that one of the original features was reacting strongly to image
+                resolution rather than to the tyre itself.</li>
+              <li>That finding led me to change the pipeline and simplify the model, and the system was then
+                deployed as a working web application.</li>
+            </ul>
+            <p class="tech-line"><strong>Built with:</strong> Python, OpenCV, scikit-learn, SVM, GLCM/LBP features,
+              Vercel</p>
+            <p class="project-note">
+              It screens surface condition from a photograph. It does not measure tread depth in millimetres,
+              certify roadworthiness, or replace a qualified tyre professional.
+            </p>
+            <p class="project-research">Research work currently being prepared for submission to journals.</p>
+            <div class="project-links">
+              <a class="btn" href="https://tyre-tread-analysis-one.vercel.app/" target="_blank" rel="noopener">Live
+                demo</a>
+              <a class="btn btn--ghost" href="https://github.com/MRC005/tyre-tread-analysis" target="_blank"
+                rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-item">
+          <img src="placeholder-images/logo_icon.png" width="260" height="289" loading="lazy" decoding="async"
+            alt="MinuteMeals logo">
+          <div class="project-content">
+            <h3>MinuteMeals</h3>
+            <p class="project-role">Full-stack food delivery platform</p>
+            <p>
+              A MERN food-ordering app I built on my own, from the database schema up to the deployed site: menu
+              browsing, cart, orders, live order status, and an admin side for managing menus and watching orders
+              move through their lifecycle.
+            </p>
+            <ul>
+              <li>Built the REST API backend and a responsive, mobile-first React front end.</li>
+              <li>Added an admin dashboard for menu management and order-lifecycle control.</li>
+              <li>This was the project where I stopped thinking in pages and started thinking in state.</li>
+            </ul>
+            <p class="tech-line"><strong>Built with:</strong> React, Node.js, Express, MongoDB, REST APIs</p>
+            <div class="project-links">
+              <a class="btn" href="https://minutemeals-client.onrender.com/" target="_blank" rel="noopener">Live
+                demo</a>
+              <a class="btn btn--ghost" href="https://github.com/MRC005/MinuteMeals" target="_blank"
+                rel="noopener">GitHub</a>
+              <a class="btn btn--ghost" href="https://minutemeals-dashboard.onrender.com/" target="_blank"
+                rel="noopener">Admin dashboard</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-item">
+          <img src="placeholder-images/logo.png" width="260" height="164" loading="lazy" decoding="async"
+            alt="DomoticsHub logo">
+          <div class="project-content">
+            <h3>DomoticsHub</h3>
+            <p class="project-role">Team project &middot; DomoticDynamos (Jaison, Machum, Jathin)</p>
+            <p>
+              A home-automation dashboard that brings lighting, climate, security and appliances under one
+              interface, with remote access and energy monitoring.
+            </p>
+            <ul>
+              <li>Built a single control interface for smart devices across the home.</li>
+              <li>Added remote access, energy monitoring and a voice assistant.</li>
+            </ul>
+            <p class="tech-line"><strong>Built with:</strong> HTML, CSS, JavaScript, React.js, Python, IoT
+              protocols</p>
+            <div class="project-links">
+              <a class="btn" href="https://mrc005.github.io/DOMOTICSHUB-HOME_AUTOMATION/index.html" target="_blank"
+                rel="noopener">Live demo</a>
+              <a class="btn btn--ghost" href="https://github.com/MRC005/DOMOTICSHUB-HOME_AUTOMATION" target="_blank"
+                rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-item project-item--text">
+          <div class="project-content">
+            <h3>Autonomous Cloud Cost Governor Agent</h3>
+            <p class="project-role">Java &middot; cloud simulation</p>
+            <p>
+              A simulated multi-VM cloud datacenter in Java where an agent watches CPU, RAM and bandwidth telemetry
+              and predicts which workloads are about to become expensive &mdash; catching cost problems before the
+              bill rather than after it.
+            </p>
+            <ul>
+              <li>Instrumented cost telemetry from the simulation into structured CSV data pipelines.</li>
+              <li>Built a Cost Failure Probability predictor from utilisation signals, plus visualisations of CPU
+                cost and idle-waste trends.</li>
+            </ul>
+            <p class="tech-line"><strong>Built with:</strong> Java (JDK 17+), CloudSim Plus, Maven, Python, Pandas,
+              Matplotlib</p>
+            <div class="project-links">
+              <a class="btn btn--ghost" href="https://github.com/MRC005/cloudsim-autonomous-cost-governor"
+                target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-item project-item--text">
+          <div class="project-content">
+            <h3>Real-Time Precision Cooling System</h3>
+            <p class="project-role">Arduino &middot; embedded control</p>
+            <p>
+              A four-mode closed-loop temperature controller (Manual, Linear, PID, AUTO) with tuned PID gains
+              (Kp=8.0, Ki=0.3, Kd=2.0) and anti-windup clamping, driven from a rotary-encoder interface on a
+              16&times;2 I2C LCD.
+            </p>
+            <ul>
+              <li>Implemented a hybrid AUTO mode that switches control strategy based on how far off target it
+                is.</li>
+              <li>This is where I learned that control loops behave nothing like the textbook diagram until you
+                tune them yourself.</li>
+            </ul>
+            <p class="tech-line"><strong>Built with:</strong> Embedded C++, PID control, DS18B20 sensors, MOSFET
+              drivers, I2C</p>
+            <div class="project-links">
+              <a class="btn btn--ghost"
+                href="https://github.com/MRC005/Real-Time-Precision-Cooling-System-An-Arduino-Based-Multi-Mode-Fan-Controller-with-PID-Integration"
+                target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-item project-item--text">
+          <div class="project-content">
+            <h3>Cross-Lingual Semantic Role Labeling</h3>
+            <p class="project-role">NLP &middot; zero-shot transfer</p>
+            <p>
+              Labelling who did what to whom in a sentence, in languages the model was never trained on, using
+              zero-shot transfer. An experiment in how far you can get with no target-language training data.
+            </p>
+            <p class="tech-line"><strong>Built with:</strong> Python, NLP, multilingual transfer learning</p>
+            <div class="project-links">
+              <a class="btn btn--ghost"
+                href="https://github.com/MRC005/Cross-Lingual-Semantic-Role-Labeling-via-Zero-Shot-Transfer"
+                target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </section>
+
+    <!-- //  EDUCATION  // -->
+    <section class="resume-section">
+      <h2>Education</h2>
+
+      <section class="education-item">
+        <h3>Vellore Institute of Technology (VIT), Vellore, Tamil Nadu</h3>
+        <p>B.Tech, Computer Science and Engineering (Core) &middot; 2023 &ndash; 2027 (Expected)</p>
+      </section>
+      <section class="education-item">
+        <h3>Noonmati Public School &mdash; Guwahati, Assam</h3>
+        <p>Higher Secondary, Class XII &middot; 2023</p>
+      </section>
+      <section class="education-item">
+        <h3>Manas Valley Academy &mdash; Barpeta Road, Assam</h3>
+        <p>Secondary, Class X &middot; 2021</p>
+      </section>
+    </section>
+
+    <!-- //  TECHNICAL SKILLS  // -->
+    <section class="resume-section">
+      <h2>Technical Skills</h2>
+
+      <div class="skills-group">
+        <h3>Languages</h3>
+        <ul class="skills-list">
+          <li>Java</li>
+          <li>Python</li>
+          <li>C++</li>
+          <li>C</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3>Frontend</h3>
+        <ul class="skills-list">
+          <li>React.js</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Responsive UI</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3>Backend &amp; Databases</h3>
+        <ul class="skills-list">
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>REST APIs</li>
+          <li>MongoDB</li>
+          <li>JSON</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3>Machine Learning &amp; Computer Vision</h3>
+        <ul class="skills-list">
+          <li>OpenCV</li>
+          <li>scikit-learn</li>
+          <li>NumPy</li>
+          <li>Pandas</li>
+          <li>Matplotlib</li>
+          <li>SVM</li>
+          <li>Feature Engineering</li>
+          <li>NLP</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3>Cloud, Data &amp; Deployment</h3>
+        <ul class="skills-list">
+          <li>Vercel</li>
+          <li>Render</li>
+          <li>GitHub Pages</li>
+          <li>CloudSim Plus</li>
+          <li>Data Pipelines</li>
+          <li>Telemetry Processing</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3>Embedded &amp; IoT</h3>
+        <ul class="skills-list">
+          <li>Arduino</li>
+          <li>Embedded C++</li>
+          <li>PID Control</li>
+          <li>DS18B20</li>
+          <li>I2C</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3>Tools &amp; Foundations</h3>
+        <ul class="skills-list">
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Maven</li>
+          <li>Postman</li>
+          <li>VS Code</li>
+          <li>Linux</li>
+          <li>MATLAB</li>
+          <li>Data Structures &amp; Algorithms</li>
+          <li>OOP</li>
+          <li>DBMS</li>
+          <li>Operating Systems</li>
+          <li>Computer Networks</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- //  ACHIEVEMENTS & CERTIFICATIONS  // -->
+    <section class="resume-section">
+      <h2>Achievements &amp; Certifications</h2>
+      <ul class="awards-list">
+        <li>
+          <div class="award-title">📊 <strong>VIT Engineering Entrance Examination (VITEEE)</strong></div>
+          <div class="award-details">Vellore Institute of Technology &middot; 2023</div>
+          <div class="award-result">All India Rank <strong>#413</strong></div>
+        </li>
+        <li>
+          <div class="award-title">💼 <strong>TECDIA India &mdash; Coding Challenge</strong></div>
+          <div class="award-details">Competitive coding challenge evaluation</div>
+          <div class="award-result">Shortlisted for interview</div>
+        </li>
+        <li>
+          <div class="award-title">🤝 <strong>Core Member &mdash; VIT Student Chapters</strong></div>
+          <div class="award-details">Dream Merchants (finance and external partnerships) &middot; AdMark (creative
+            direction and publicity) &middot; Enajori Assamese Literary Association (event management)</div>
+          <div class="award-result">Led cross-functional student teams</div>
+        </li>
+        <li>
+          <div class="award-title">📜 <strong>Certifications</strong></div>
+          <div class="award-details">MERN Stack Web Development (FacePrep, 2025) &middot; AutoML Bootcamp (Udemy,
+            2023) &middot; Cyber Security Workshop (VIT graVITas, 2023)</div>
+        </li>
+        <li>
+          <div class="award-title">🗣️ <strong>Languages</strong></div>
+          <div class="award-details">Assamese (native) &middot; English and Hindi (professional) &middot; Bengali
+            (limited working) &middot; Japanese (elementary)</div>
+        </li>
+        <li>
+          <div class="award-title">🏅 <strong>Ajmal National Talent Search Examination (ANTSE)</strong></div>
+          <div class="award-details">Ajmal Foundation, Assam &middot; May 2016</div>
+          <div class="award-result">State Rank <strong>#6</strong></div>
+        </li>
+        <li>
+          <div class="award-title">🏅 <strong>Sofura Talent Discovery Examination</strong></div>
+          <div class="award-details">মাহেকীয়া শিশু আলোচনী "সফুৰা" &middot; September 2014</div>
+          <div class="award-result">State Rank <strong>#20</strong></div>
+        </li>
+        <li>
+          <div class="award-title">🏅 <strong>NERITS State Level Talent Search Examination</strong></div>
+          <div class="award-details">North East Regional Institute for Talent Search, Assam Govt. Permitted
+            &middot; October 2013</div>
+          <div class="award-result">All Assam Rank <strong>#34</strong></div>
+        </li>
+        <li>
+          <div class="award-title">🎨 <strong>Fine Arts &amp; Painting &mdash; Nikhil Bharat Sangeet Samiti
+              (Kolkata)</strong></div>
+          <div class="award-details">Indian International Rural Cultural Centre, New Delhi &middot; 2011, 2012,
+            2013</div>
+          <div class="award-result">1st Division</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- //  CONTACT  // -->
+    <section class="resume-section">
+      <h2>Contact</h2>
+      <p class="section-intro">If you'd like to talk about any of this, email is the surest way to reach me.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Email</span>
+          <a href="mailto:machumroy.choudhury2023@vitstudent.ac.in">machumroy.choudhury2023@vitstudent.ac.in</a>
+        </li>
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://linkedin.com/in/machum-roy-choudhury-463999270" target="_blank"
+            rel="noopener">linkedin.com/in/machum-roy-choudhury</a>
+        </li>
+        <li>
+          <span class="contact-label">GitHub</span>
+          <a href="https://github.com/MRC005" target="_blank" rel="noopener">github.com/MRC005</a>
+        </li>
+        <li>
+          <span class="contact-label">Resume</span>
+          <a href="Machum_Roy_Choudhury_Resume.pdf" target="_blank" rel="noopener">Download the PDF</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+  <footer>
+    <!-- Start content edits below this line. -->
+    <p>&copy; 2026 Machum Roy Choudhury | <a class="email-link"
+        href="mailto:machumroy.choudhury2023@vitstudent.ac.in">
+        <i class="fa-solid fa-envelope-open-text email-icon"></i>
+        machumroy.choudhury2023@vitstudent.ac.in
+      </a>
     </p>
-  </div>
+    <!-- Add or remove any networks. -->
+    <ul class="socials">
+      <li>
+        <a href="https://linkedin.com/in/machum-roy-choudhury-463999270" target="_blank" rel="noopener">
+          <img src="placeholder-images/icon-logo-linkedin.png" width="30" height="30" alt="LinkedIn">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/MRC005" target="_blank" rel="noopener">
+          <img src="placeholder-images/github.png" width="30" height="30" alt="GitHub">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@mrc4182" target="_blank" rel="noopener">
+          <img src="placeholder-images/icon-logo-youtube.png" width="30" height="30" alt="YouTube">
+        </a>
+      </li>
+    </ul>
+
+    <!-- End content edits here. -->
+  </footer>
 </body>
 
 </html>
