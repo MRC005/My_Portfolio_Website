@@ -4,101 +4,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Machum Roy Choudhury Portfolio</title>
+  <title>Machum Roy Choudhury — Computer Science Engineering Student</title>
   <meta name="description"
-    content="Machum Roy Choudhury - final-year Computer Science Engineering student at VIT Vellore. Projects in full-stack web development, computer vision, cloud systems and embedded IoT.">
+    content="Machum Roy Choudhury, final-year Computer Science Engineering student at VIT Vellore. Full-stack web development, computer vision and machine learning, cloud and embedded systems.">
   <link rel="canonical" href="https://mrc005.github.io/My_Portfolio_Website/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Machum Roy Choudhury Portfolio">
+  <meta property="og:title" content="Machum Roy Choudhury — Computer Science Engineering Student">
   <meta property="og:description"
-    content="Final-year Computer Science Engineering student at VIT Vellore. Projects in full-stack web development, computer vision, cloud systems and embedded IoT.">
+    content="Final-year CSE student at VIT Vellore. TreadCheck, MinuteMeals, DomoticsHub and more.">
   <meta property="og:url" content="https://mrc005.github.io/My_Portfolio_Website/">
   <link rel="icon" type="image/png" href="placeholder-images/cv.png">
-  <link rel="shortcut icon" href="placeholder-images/cv.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
 </head>
 
-<body class="home">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <!-- //  INTRO  // -->
+<body>
+  <a class="skip" href="#work">Skip to projects</a>
 
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div id="node-label" aria-hidden="true"></div>
 
-  <div class="content-wrapper">
-    <div class="content-bg">
-      <header>
-        <!-- Start content edits below this line. -->
-        <h1>Machum Roy Choudhury</h1>
-        <h2>Computer Science Engineering Student &middot; VIT Vellore</h2>
+  <header class="topbar">
+    <a class="topbar__name" href="#top">Machum Roy Choudhury</a>
+    <a class="topbar__mail" href="mailto:machumroychoudhury05@gmail.com">machumroychoudhury05@gmail.com</a>
+    <nav class="topbar__nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <!-- End content edits here. -->
-      </header>
+  <ul class="rail" aria-label="Profiles">
+    <li><a href="https://github.com/MRC005" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z" />
+        </svg></a></li>
+    <li><a href="https://linkedin.com/in/machum-roy-choudhury-463999270" target="_blank" rel="noopener"
+        aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.4 21.5h5.16V9.2H2.4v12.3ZM9.9 9.2h4.95v1.68h.07c.69-1.2 2.37-2.06 4.12-2.06 3.5 0 4.46 2.15 4.46 5.4v7.28h-5.15v-6.46c0-1.54-.3-3.02-2.12-3.02-1.78 0-2.18 1.31-2.18 2.94v6.54H9.9V9.2Z" />
+        </svg></a></li>
+    <li><a href="https://www.youtube.com/@mrc4182" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M23.5 6.9a3 3 0 0 0-2.1-2.1C19.5 4.3 12 4.3 12 4.3s-7.5 0-9.4.5A3 3 0 0 0 .5 6.9C0 8.8 0 12 0 12s0 3.2.5 5.1a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.1.5-5.1s0-3.2-.5-5.1ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z" />
+        </svg></a></li>
+  </ul>
 
-      <!-- //  ABOUT ME  // -->
+  <a class="resume-corner" href="Machum_Roy_Choudhury_Resume.pdf" target="_blank" rel="noopener">
+    Resume
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19h16" />
+    </svg>
+  </a>
 
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <p class="hero__hi">Hello, I'm</p>
+      <h1 class="hero__name"><span>Machum</span><span>Roy Choudhury</span></h1>
+      <div class="hero__role">
+        <p class="hero__role-sm">Computer Science Engineering Student</p>
+        <p class="hero__role-lg">VIT <em>Vellore</em></p>
+      </div>
+      <p class="hero__line">I build software end to end — and I like the part where an idea stops being a plan and
+        starts actually running.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#work">See my work</a>
+        <a class="btn btn--line" href="Machum_Roy_Choudhury_Resume.pdf" target="_blank" rel="noopener">Download
+          resume</a>
+      </div>
+    </section>
 
-      <main id="main">
-        <!-- Start content edits below this line. -->
-        <p id="profile-summary">I'm in my final year of B.Tech Computer Science Engineering at VIT Vellore. I like
-          taking an idea and building it until it actually works &mdash; which has taken me through full-stack web
-          development, computer vision and machine learning, backend and cloud systems, and a bit of embedded
-          electronics.</p>
-        <p>Most of what I know came from projects: a food-delivery platform I built end to end, a tyre-screening
-          tool that runs computer vision on phone photos, a cloud-cost simulator in Java, and a temperature
-          controller on an Arduino. In 2026 I interned at AMTRON, a Government of Assam IT undertaking, working on
-          e-governance software.</p>
-        <p>To see the projects and the rest of my work history, have a look at my <a href="resume.html">resume</a>.
-          Thanks for stopping by!
-        </p>
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <h2 class="big">What<br><em>I do</em></h2>
+      <div class="cards">
+        <article class="brackets reveal">
+          <h3>Full-stack</h3>
+          <p class="brackets__kind">Web applications</p>
+          <p>Building the whole thing — database schema, REST API, and a React front end — then deploying it
+            somewhere people can actually use it.</p>
+          <p class="brackets__tech">React · Node.js · Express · MongoDB</p>
+        </article>
+        <article class="brackets reveal">
+          <h3>Vision &amp; ML</h3>
+          <p class="brackets__kind">Applied machine learning</p>
+          <p>Classical computer vision and feature engineering, with enough testing to find out when a feature is
+            measuring the wrong thing.</p>
+          <p class="brackets__tech">Python · OpenCV · scikit-learn · NumPy</p>
+        </article>
+        <article class="brackets reveal">
+          <h3>Systems</h3>
+          <p class="brackets__kind">Cloud &amp; embedded</p>
+          <p>Java cloud simulation and cost telemetry at one end, PID control loops on an Arduino at the other.
+            Both taught me more than a lecture did.</p>
+          <p class="brackets__tech">Java · CloudSim Plus · Embedded C++</p>
+        </article>
+      </div>
 
-        <div class="home-actions">
-          <a class="btn" href="resume.html">View my work</a>
-          <a class="btn btn--ghost" href="Machum_Roy_Choudhury_Resume.pdf" target="_blank"
-            rel="noopener">Download resume</a>
+      <div class="about-me reveal">
+        <img src="placeholder-images/portrait.jpg" width="760" height="760" loading="lazy"
+          decoding="async" alt="Machum Roy Choudhury">
+        <div>
+          <p>I'm in my final year of B.Tech Computer Science Engineering at VIT Vellore, graduating in 2027. Most of
+            what I know came from building projects and watching where they broke.</p>
+          <p>In 2026 I trained in the IT division of <strong>AMTRON</strong>, a Government of Assam IT
+            undertaking, studying how its e-governance applications are built and delivered &mdash; my first
+            look at software with institutional weight behind it.</p>
+          <p>Right now I'm looking for a software engineering role where I can keep building systems people
+            actually use.</p>
         </div>
+      </div>
+    </section>
 
-        <!-- End content edits here. -->
-      </main>
-    </div>
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience">
+      <h2 class="big">Experience &amp;<br><em>education</em></h2>
+      <div class="timeline">
+        <article class="row reveal">
+          <p class="row__when">2026</p>
+          <div class="row__body">
+            <h3>Software Development Intern</h3>
+            <p class="row__org">AMTRON — Assam Electronics Development Corporation Ltd. · Guwahati</p>
+            <ul>
+              <li>Trained in AMTRON's IT division, which runs Assam's e-District platform (46+ online
+                citizen services, 8 lakh+ applications).</li>
+              <li>Studied a G2C e-governance app end to end (online application, officer verification,
+                certificate issue) and how it is delivered: requirements, UAT, deployment, support.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="row reveal">
+          <p class="row__when">2023 — 2027</p>
+          <div class="row__body">
+            <h3>B.Tech, Computer Science &amp; Engineering (Core)</h3>
+            <p class="row__org">Vellore Institute of Technology · Vellore, Tamil Nadu</p>
+            <ul>
+              <li>All India Rank 413 in VITEEE 2023.</li>
+              <li>Earlier: Noonmati Public School, Guwahati (Class XII) and Manas Valley Academy, Barpeta Road
+                (Class X).</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  </div>
+    <!-- ================= WORK ================= -->
+    <section class="section" id="work">
+      <h2 class="big">My<br><em>work</em></h2>
+      <div class="work"></div>
+      <p class="work__more">More on <a href="https://github.com/MRC005" target="_blank" rel="noopener">GitHub</a>.</p>
+    </section>
 
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <h2 class="big">The<br><em>toolkit</em></h2>
+      <div class="skills"></div>
+    </section>
 
+    <!-- ================= AWARDS ================= -->
+    <section class="section" id="awards">
+      <h2 class="big">Along the<br><em>way</em></h2>
+      <dl class="facts">
+        <div class="reveal">
+          <dt>VITEEE 2023</dt>
+          <dd>All India Rank 413</dd>
+        </div>
+        <div class="reveal">
+          <dt>Binary Battles 3.0</dt>
+          <dd>Finalist, Top 4 of 30 teams (ISA-VIT, Yantra 2026): timed coding, code relay, CodeSprint</dd>
+        </div>
+        <div class="reveal">
+          <dt>Student chapters</dt>
+          <dd>Core member — Dream Merchants, AdMark, and the Enajori Assamese Literary Association</dd>
+        </div>
+        <div class="reveal">
+          <dt>Certifications</dt>
+          <dd>MERN Stack Web Development (FacePrep, 2025) · AutoML Bootcamp (Udemy, 2023) · Cyber Security Workshop
+            (VIT graVITas, 2023)</dd>
+        </div>
+        <div class="reveal">
+          <dt>Languages</dt>
+          <dd>Assamese (native) · English and Hindi (professional) · Bengali (limited working) · Japanese
+            (elementary)</dd>
+        </div>
+      </dl>
+    </section>
 
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--contact" id="contact">
+      <h2 class="big">Get in<br><em>touch</em></h2>
+      <div class="contact">
+        <div class="contact__block">
+          <p class="contact__label">Email</p>
+          <a class="contact__big" href="mailto:machumroychoudhury05@gmail.com">machumroychoudhury05@gmail.com</a>
+        </div>
+        <div class="contact__block">
+          <p class="contact__label">Elsewhere</p>
+          <ul class="contact__links">
+            <li><a href="https://github.com/MRC005" target="_blank" rel="noopener">GitHub <span>&#8599;</span></a>
+            </li>
+            <li><a href="https://linkedin.com/in/machum-roy-choudhury-463999270" target="_blank"
+                  rel="noopener">LinkedIn <span>&#8599;</span></a></li>
+            <li><a href="Machum_Roy_Choudhury_Resume.pdf" target="_blank" rel="noopener">Resume
+                  <span>&#8599;</span></a></li>
+          </ul>
+        </div>
+        <div class="contact__block">
+          <p class="contact__label">Based in</p>
+          <p class="contact__where">Vellore, Tamil Nadu<br>and Guwahati, Assam</p>
+        </div>
+      </div>
+      <p class="colophon">Built and maintained by Machum Roy Choudhury &middot; &copy; 2026</p>
+    </section>
+  </main>
 
-  <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-  <footer>
-    <!-- Start content edits below this line. -->
-    <p>&copy; 2026 by Machum Roy Choudhury | <a class="email-link"
-        href="mailto:machumroy.choudhury2023@vitstudent.ac.in">
-        <i class="fa-solid fa-envelope-open-text email-icon"></i>
-        machumroy.choudhury2023@vitstudent.ac.in
-      </a>
-    </p>
-    <!-- Add or remove any networks. -->
-    <ul class="socials">
-      <li>
-        <a href="https://linkedin.com/in/machum-roy-choudhury-463999270" target="_blank" rel="noopener">
-          <img src="placeholder-images/icon-logo-linkedin.png" width="30" height="30" alt="Connect on LinkedIn">
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/MRC005" target="_blank" rel="noopener">
-          <img src="placeholder-images/github.png" width="30" height="30" alt="Visit my GitHub profile">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@mrc4182" target="_blank" rel="noopener">
-          <img src="placeholder-images/icon-logo-youtube.png" width="30" height="30" alt="Check out my YouTube channel">
-        </a>
-      </li>
-    </ul>
-    <!-- End content edits here. -->
-  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="app.js" defer></script>
 </body>
 
 </html>
